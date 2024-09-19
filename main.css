@@ -4,12 +4,13 @@
 #display {
     color: green;
     font-size: 3rem;
+    margin: 5vh;
 }
 
 h1{
     font-size: 3rem;
     padding: 0;
-    margin: 5vh 0 0 0;
+    margin: 7vh 0 0 0;
 }
 body{
     display: flex;
@@ -26,4 +27,48 @@ button {
     width: 100px;
     height: 100px;
     border-radius: 50px;
+    margin: 1vw;
+}
+
+
+@media screen and (max-width: 400px) {
+    button{
+        font-size: 15px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+
+/*add home button and animation*/
+
+#home-button{
+    background-color: #146C94;
+    color: #F6F1F1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    display:block;
+    aspect-ratio: 1/1;
+    width:min-content;
+    padding: 2px;
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    left:10px ;
+    font-size: 14px;
+
+
+}
+
+#home-button:hover {
+    background-color: #19A7CE;
+    color: black;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+#home-button:active{
+    transform: scale(.9);
 }
